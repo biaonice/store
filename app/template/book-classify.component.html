@@ -1,0 +1,142 @@
+  <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="public/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="nav-link">
+          <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/classify">全站导航</a></li> 
+             <li><a href="#">关于我们</a></li>
+            <li><a href="/cart">购物车</a></li>
+          </ul>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li><a href="/login">登录</a></li>
+            <li><a href="/register">注册</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="search">
+      <span><input type="text" placeholder="书名/作者/出版社"></span><button>搜索</button>
+    </div>
+  </div>
+
+
+  <div class="container address">
+    <p>现在位置：<span><a href="">首页</a></span>/<span><a href="">内科学</a></span></p>
+  </div>
+  <div class="container">
+    <div class="left">
+      <div class="section-l">
+        <span>全站导航</span>
+        <ul> 
+          <li><a href="/classify">内科学</a></li>
+          <li><a href="/classify">外科学</a></li>
+          <li><a href="/classify">口腔学</a></li>
+          <li><a href="/classify">前沿医学</a></li>
+          <li><a href="/classify">内分泌学</a></li>
+          <li><a href="/classify">妇科学</a></li>
+          <li><a href="/classify">儿科学</a></li>
+          <li><a href="/classify">药理学</a></li>
+          <li><a href="/classify">基础医学</a></li>
+          <li><a href="/classify">中国医学</a></li>
+          <li><a href="/classify">神经学和精神病学</a></li>
+        </ul>
+      </div>
+      <div class="section-l-d">
+        <div class="title">推广图书</div>
+        
+        <a href="/detail" *ngFor="let book of books">
+          <div>
+            <div><img src="{{book.src}}" alt=""></div>
+            <p>书名:{{book.name}}</p>
+            <span>{{book.price}}￥</span>
+          </div>
+        </a>
+        <a href="/detail" *ngFor="let book of books">
+          <div>
+            <div><img src="{{book.src}}" alt=""></div>
+            <p>书名:{{book.name}}</p>
+            <span>{{book.price}}￥</span>
+          </div>
+        </a>
+        <a href="/detail" *ngFor="let book of books">
+          <div>
+            <div><img src="{{book.src}}" alt=""></div>
+            <p>书名:{{book.name}}</p>
+            <span>{{book.price}}￥</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <div class="right">
+
+      <div class="bookList" *ngFor="let book of books">
+          <div class="bookImg" ><img src="{{ book.src }}" alt=""></div>
+          <p class="title"><a href="/detail">{{book.summery}}</a></p>
+          <p></p>
+          <p></p>
+          <p><span class="star"></span><span><a href="#">{{book.price}}条评论</a></span></p>
+          <p></p>
+          <p></p>
+          <p class="last">单价：<span>{{book.price}}￥</span><button (click)=gotoDetail()>加入购物车</button></p>
+      </div>
+       <div class="bookList" *ngFor="let book of books">
+          <div class="bookImg" ><img src="{{ book.src }}" alt=""></div>
+          <p class="title"><a href="/detail">{{book.summery}}</a></p>
+          <p></p>
+          <p></p>
+          <p><span class="star"></span><span><a href="#">{{book.price}}条评论</a></span></p>
+          <p></p>
+          <p></p>
+          <p class="last">单价：<span>{{book.price}}￥</span><button (click)=gotoDetail()>加入购物车</button></p>
+      </div>
+    </div>
+  </div>
+
+
+   <footer>
+    <div class="container">
+      <div class="help">
+        <span>服务与支持</span>
+        <ul>
+          <li><a href="">客户服务</a></li>
+          <li><a href="">支付方式</a></li>
+          <li><a href="">时间/运费</a></li>
+          <li><a href="">退货/退款</a></li>
+          <li><a href="">服务条款</a></li>
+          <li><a href="">隐私政策</a></li>
+        </ul>
+      </div>
+      <div class="payment">
+        <span>支付方式</span>
+        <ul>
+          <li>支付宝</li>
+          <li>微信</li>
+          <li>货到付款</li>
+          <li>分期付款(后)</li>
+        </ul>
+      </div>
+      <div class="payment">
+        <span>联系我们</span>
+        <ul>
+          <li>qq：</li>
+          <li>微信：</li>
+          <li>邮箱：</li>
+          <li>facebook：</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer">
+        <p>版权所有&copy;hanbiao 2017-1-1</p>
+      </div>   
+    </div>
+  </footer>
+

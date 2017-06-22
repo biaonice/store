@@ -1,0 +1,56 @@
+  <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/muser">医学图书网后台管理</a>
+        </div>
+        <div class="nav-link"> 
+          <ul>
+            <li class="active"><a href="/muser">用户管理</a></li>
+            <li><a href="/mbooks">书籍管理</a></li>
+            <li><a href="/morder">订单管理</a></li>
+             <li><a href="/mevaluate">评论管理</a></li>
+            <li><a href="/maffice">公告管理</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a  href="/login" id="back">退出</a>
+        </div>
+    </div>
+  </nav>
+
+
+  <div class="container addBook">
+    <a  href="/bookadd" id="addBook">新增书籍</a>
+  </div>
+  <div class="container clear">
+    <table class="user-table">
+      <tr>
+        <th>书籍编号</th>
+        <th>类别</th>
+        <th>书名</th>
+        <th>作者</th>
+        <th>出版社</th>
+        <th>出版时间</th>
+        <th>版次</th>
+        <th>价格</th>
+        <th>印刷时间</th>
+        <th>简介</th>
+        <th>操作1</th>
+        <th>操作2</th>
+      </tr>
+      <tr *ngFor="let book of books" (click)="onSelect(book)" [class.selected]="book === selectedBook">
+        <td>{{book.id}}</td>
+        <td>{{book.classify}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publish}}</td> 
+        <td>{{book.publishTime}}</td>
+        <td>{{book.edition}}</td>
+        <td>{{book.price}}</td>
+        <td>{{book.pushTime}}</td>
+        <td>{{book.summery}}</td>
+        <td><a href="/bookedit" id="edit">编辑</a></td>
+        <td><button id="delete" (class)="delete(book.id); $event.stopPropagation()">删除</button></td>
+      </tr>
+    </table>
+  </div>

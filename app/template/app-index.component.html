@@ -1,0 +1,223 @@
+   <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="public/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="nav-link">
+          <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/classify">全站导航</a></li> 
+            <li><a href="#">关于我们</a></li>
+            <li><a href="/cart">购物车</a></li>
+          </ul>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li><a href="/login">登录</a></li>
+            <li><a href="/register">注册</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="search">
+      <span><input type="text" placeholder="书名/作者/出版社"></span><button>搜索</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-l">
+      <span>全站导航</span>
+        <ul> 
+          <li><a href="/classify">内科学</a></li>
+          <li><a href="/classify">外科学</a></li>
+          <li><a href="/classify">口腔学</a></li>
+          <li><a href="/classify">前沿医学</a></li>
+          <li><a href="/classify">内分泌学</a></li>
+          <li><a href="/classify">妇科学</a></li>
+          <li><a href="/classify">儿科学</a></li>
+          <li><a href="/classify">药理学</a></li>
+          <li><a href="/classify">基础医学</a></li>
+          <li><a href="/classify">中国医学</a></li>
+          <li><a href="/classify">神经学和精神病学</a></li>
+        </ul>
+    </div>
+    <div class="section-c">
+      <div class="title"><span>新书上架</span></div>
+      <div class="newBookList">
+        <a href="/detail" *ngFor="let book of books">
+          <div class="book" >
+            <img src="{{book.src}}" alt="{{ book.name}}">
+            <div>
+              <p>书名：<span>{{ book.name }}</span></p>
+              <p>作者：<span>{{ book.author}}</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span>{{ book.summery }}</span></p>
+              <p class="price">价格：{{ book.price }}￥</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="section-r">
+       <div class="title"><span>店长推荐</span></div>
+       <ol>
+         <li *ngFor="let book of books"><a href="/detail">{{ book.name}}</a></li>
+       </ol>
+       <div class="title"><span>新书咨询</span></div>
+       <ol>
+         <li *ngFor="let book of books"><a href="/detail">{{ book.name}}</a></li>
+       </ol>
+    </div>
+  </div>
+
+  <div class="container hot_book">
+    <div class="title"><span>热门推荐</span></div>
+    <div class="newBookList">
+      <a href="/detail" *ngFor="let book of books">
+        <div class="book">
+            <img src="{{book.src}}" alt="">
+            <div>
+              <p>书名：<span>{{ book.name }}</span></p>
+              <p>作者：<span>{{ book.author }}</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span>{{book.summery}}</span></p>
+              <p class="price">价格：{{book.price}}￥</p>
+            </div>
+          </div>
+      </a>
+      <a href="/detail">
+        <div class="book">
+            <img src="public/images/b-1.jpg" alt="">
+            <div>
+              <p>书名：<span>中医儿科学</span></p>
+              <p>作者：<span>无间道</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span></span></p>
+              <p class="price">价格：17￥</p>
+            </div>
+          </div>
+      </a>
+      <a href="/detail">
+        <div class="book">
+            <img src="public/images/b-1.jpg" alt="">
+            <div>
+              <p>书名：<span>中医儿科学</span></p>
+              <p>作者：<span>无间道</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span></span></p>
+              <p class="price">价格：17￥</p>
+            </div>
+          </div>
+      </a> 
+    </div>
+  </div>
+
+
+  <div class="container news">
+    <div class="title"><span>医学生专题</span></div>
+    <div class="BookList">
+      <a href="/detail" *ngFor="let book of books">
+        <div class="book">
+            <img src="{{book.src}}" alt="">
+            <div>
+              <p>书名：<span>{{ book.name }}</span></p>
+              <p>作者：<span>{{ book.author }}</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span>{{book.summery}}</span></p>
+              <p class="price">价格：{{book.price}}￥</p>
+            </div>
+          </div>
+      </a>
+      <a href="/detail">
+        <div class="book">
+            <img src="public/images/b-1.jpg" alt="">
+            <div>
+              <p>书名：<span>中医儿科学</span></p>
+              <p>作者：<span>无间道</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span></span></p>
+              <p class="price">价格：17￥</p>
+            </div>
+        </div>
+      </a>
+      <a href="/detail">
+        <div class="book">
+            <img src="public/images/b-1.jpg" alt="">
+            <div>
+              <p>书名：<span>中医儿科学</span></p>
+              <p>作者：<span>无间道</span></p>
+              <p>评分：<span><img src="" alt=""></span></p>
+              <p title="">简介：<span></span></p>
+              <p class="price">价格：17￥</p>
+            </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+    <div class="container technologies">
+        <div class="title"><span>医学前沿</span></div>
+        <div class="sideNews">
+            <img src="" alt="">
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+            <p><a href="">大街上看到骄傲了收购价虽然很结实大富科技</a></p>
+        </div>
+        <div class="sideNews_right">
+            <div class="title"><span>网站公告</span></div>
+            <div class="article">
+                <p>大街上看到骄傲了收购价虽然很结实大富.科技大街上看到骄傲了收购价虽然很结实大富科技大街上看到骄傲了收购价虽然很结实大富科.技大街上看到骄傲了收购价虽然很结实大富科技大街上看到骄傲了收购价虽然很结实大富科技.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="help">
+        <span>服务与支持</span>
+        <ul>
+          <li><a href="">客户服务</a></li>
+          <li><a href="">支付方式</a></li>
+          <li><a href="">时间/运费</a></li>
+          <li><a href="">退货/退款</a></li>
+          <li><a href="">服务条款</a></li>
+          <li><a href="">隐私政策</a></li>
+        </ul>
+      </div>
+      <div class="payment">
+        <span>支付方式</span>
+        <ul>
+          <li>支付宝</li>
+          <li>微信</li>
+          <li>货到付款</li>
+          <li>分期付款(后)</li>
+        </ul>
+      </div>
+      <div class="payment">
+        <span>联系我们</span>
+        <ul>
+          <li>qq：</li>
+          <li>微信：</li>
+          <li>邮箱：</li>
+          <li>facebook：</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer">
+        <p>版权所有&copy;hanbiao 2017-1-1</p>
+      </div>   
+    </div>
+  </footer>
+

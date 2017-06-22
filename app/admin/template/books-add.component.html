@@ -1,0 +1,42 @@
+ <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/muser">新增图书</a>
+        </div>
+        <div class="nav-link">
+          <ul>
+            <li class="active"><a href="/muser">用户管理</a></li>
+            <li><a href="/mbooks">书籍管理</a></li>
+            <li><a href="/morder">订单管理</a></li>
+             <li><a href="/mevaluate">评论管理</a></li>
+            <li><a href="/maffice">公告管理</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a  href="/login" id="back">退出</a>
+        </div>
+    </div>
+  </nav>
+
+
+  <div class="container userEdit"  *ngIf="book">
+    <div><span>书名：</span><input type="text" [(ngModel)]="book.name"></div>
+    <div>
+      <span>类别：</span>
+      <select>
+        <option value="内科">内科</option>
+        <option value="外科">外科</option>
+        <option value="儿科">儿科</option>
+        <option value="妇科">妇科</option>
+        <option value="神经学">神经学</option>
+      </select>
+    </div>
+    <div><span>作者：</span><input type="text" [(ngModel)]="book.author">
+    <div><span>出版社：</span><input type="text" [(ngModel)]="book.publish"></div>
+    <div><span>出版时间：</span><input type="text" [(ngModel)]="book.publishtime"></div>
+    <div><span>版次：</span><input type="text" [(ngModel)]="book.edtion"></div>
+    <div><span>价格：</span><input type="text" [(ngModel)]="book.price"></div>
+    <div><span>印刷时间：</span><input type="text" [(ngModel)]="book.name"></div>
+    <div><span>简介：</span><input type="text" [(ngModel)]="book.summery"></div>
+    <div><button id="save" (click)="save()">保存</button></div>
+  </div>

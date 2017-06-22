@@ -1,0 +1,1 @@
+{"version":3,"file":"admin-order.component.js","sourceRoot":"","sources":["admin-order.component.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAAkD;AAOlD,IAAa,mBAAmB;IALhC;QAMG,UAAK,GAAE,EAAE,CAAC;IACb,CAAC;IAAD,0BAAC;AAAD,CAAC,AAFD,IAEC;AAFY,mBAAmB;IAL/B,gBAAS,CAAC;QACV,QAAQ,EAAE,aAAa;QACvB,WAAW,EAAE,0CAA0C;QACvD,SAAS,EAAE,CAAE,sCAAsC,CAAE;KACrD,CAAC;GACW,mBAAmB,CAE/B;AAFY,kDAAmB"}

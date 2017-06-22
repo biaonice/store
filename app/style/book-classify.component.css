@@ -1,0 +1,273 @@
+
+
+.navbar{
+  width: 100%;
+  height: 40px;
+  background-color:#ddd;
+  filter: opacity(80%); 
+}
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+.container .logo{
+  width: 200px;
+  float: left;
+}
+.container .logo img{
+  width: 200px;
+}
+.nav-link{
+  float: left;
+  margin-left:100px; 
+}
+.nav-link ul{
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+}
+.nav-link ul li{
+  width: 8em;
+  float: left;
+  list-style-type: none;
+}
+.nav-link ul li a{
+  color: #000;
+  padding:0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.nav-link ul li a:hover{
+  color: #4fc08d;
+  background: #eee;
+}
+.nav-left{
+  float: right;
+  margin-left:100px; 
+}
+.nav-left ul{
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+}
+.nav-left ul li{
+  width: 4em;
+  float: left;
+  list-style-type: none;
+}
+.nav-left ul li a{
+  display: inline-block;
+  padding:0 10px;
+  color: #000;
+  text-decoration: none;
+}
+.nav-left ul li a:hover{
+  color: #4fc08d;
+  background: #eee;
+}
+
+
+.search{
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+}
+.search input{
+  width: 20em;
+  outline: none;
+}
+.search button{
+  width: 4em;
+  border:none;
+  padding: .2em;
+  margin-left:10px; 
+  color: #fff;
+  border-radius: 3px;
+  background: #4fc08d;
+}
+
+
+.address p{
+  color：#666;
+  margin-bottom: 10px;
+  font-size:.9em;
+}
+.address a{
+  color:#4fc08d;
+  text-decoration: none;
+}
+.address a:hover{
+  text-decoration: underline;
+}
+
+.left{
+  float: left;
+  width: 220px;
+}
+.section-l{
+  float: left;
+  width: 220px;
+  height: 360px;
+  border:1px solid #aaa;
+  text-align: center;
+}
+.section-l span{
+  font-size: 1em;
+  padding: .2em 0;
+  border-bottom: 1px dashed #666;
+  display: inline-block;
+  width: 100%;
+  background:#ddd; 
+  color: #4fc08d;
+  font-weight: normal;
+}
+.section-l ul{
+  text-align: left;
+  margin-left: 30px;
+}
+
+.section-l ul li{
+  width: 100%;
+  border-bottom: 1px dashed #777;
+}
+.section-l ul li a{
+  color: #333;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: .2em 0;
+  text-decoration: none;
+}
+.section-l ul li a:hover{
+  color: #4fc08d;
+  left:.1em;
+  background: #ddd;
+}
+
+.section-l-d{
+  clear: both;
+  width: 220px;
+  padding-top:20px; 
+}
+.section-l-d .title{
+  background: #ddd;
+  margin:5px 0;
+  padding: 5px;
+  background: url("./../public/images/bk_ad.jpg");
+}
+
+.section-l-d a{
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  color:#4fc08d;
+}
+.section-l-d a div{
+  text-align: center;
+  border:1px solid #eee;
+}
+.section-l-d a div span{
+  color:#e44;
+  text-align: left;
+  margin-left: 10px;
+}
+.right{
+  float: left;
+  width: 850px;
+  height: auto;
+  margin-left: 10px;
+}
+.bookList{
+  padding: 10px 0;
+  border:1px solid #eef;
+  margin:5px 0;
+}
+.bookList:hover{
+  background: #fee;
+}
+.bookList .bookImg{
+  float: left;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+}
+.bookList p{
+    padding: 5px 0;
+}
+.bookList p .star{
+    background: url("./../public/images/icon_star.png") left top repeat-x;
+    display: inline-block;
+    width: 70px;
+    height: 12px;
+}
+.bookList p.title{
+  color: #4fc08d;
+  cursor: pointer;
+}
+.bookList p.title:hover{
+  text-decoration: underline;
+}
+.bookList p a{
+  color:#4fc08d;
+}
+.bookList p.last >span{
+  color: #e33;
+  margin-left: 10px;
+}
+.bookList p.last >button{
+  color: #a66;
+  margin-left: 40px;
+}
+
+
+
+footer{
+  clear: both;
+  background: #eee;
+  margin: 20px 0 0 0;
+  color: #333;
+}
+footer >div > div.help{
+  float: left;
+  margin: 20px 130px;
+}
+footer >div > div.payment{
+  float: left;
+  margin: 20px 130px;
+}
+footer >div > div.help >span{
+  font-size: 1.2em;
+}
+footer >div > div.payment >span{
+  font-size: 1.2em;
+}
+footer >div > div>ul{
+  margin-top: 20px;
+}
+footer >div > div.payment >ul{
+  margin-left: 20px;
+
+}
+footer >div > div >ul >li{
+  list-style: none;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+}
+footer >div > div >ul >li>a{
+  color: #333;
+  text-decoration: none;
+}
+footer >div > div >ul >li>a:hover{
+  color: #000;
+}
+footer >div{
+  clear: both;
+}
+footer >div>.footer{
+  height: 2em;
+  width: 100%;
+  background: #999;
+  line-height: 2em;
+  text-align: center;
+}
